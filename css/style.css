@@ -1,0 +1,620 @@
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-# import fonts #-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+
+/*#-#-#-#-#-#-#-#-#-#-#-#-#-#-# barre de scrool #-#-#-#-#-#-#-#-#-#-#-#-#-#-#*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122, 153, 217)),
+    color-stop(0.72, rgb(73, 125, 189)),
+    color-stop(0.86, rgb(28, 58, 148))
+  );
+}
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  GÉNÉRAL  ------------------------------------------------*/
+/*#############################################################################################################*/
+:root {
+  /* Colors */
+  --primary: #1d1b30;
+  --secondary: #c0c0c0;
+  --complementary: #00ffff;
+  --white: #faf4f8;
+  --black: #141019;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+/* (à ajouter si besoin ) */
+/* h4 {
+    font-size: 2rem; 
+    font-weight: 900; 
+    font-family: "Roboto", sans-serif; 
+  }*/
+/*h5 {
+    font-size: 2rem; 
+    font-weight: 900; 
+    font-family: "Roboto", sans-serif; 
+  }*/
+/*h6 {
+    font-size: 2rem; 
+    font-weight: 900; 
+    font-family: "Roboto", sans-serif; 
+  } */
+p {
+  font-size: 1.6rem;
+  font-family: "Jost", sans-serif;
+}
+main{
+  padding-top: 13rem;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  TOOLS  --------------------------------------------------*/
+/*#############################################################################################################*/
+.td-n {
+  text-decoration: none;
+}
+.ovfl-hi {
+  overflow: hidden;
+}
+.ob-fit {
+  object-fit: cover;
+}
+.z-i_1 {
+  z-index: -1;
+}
+.z-i-10{
+  z-index: 10;
+}
+.t0 {
+  top: 0;
+}
+.t-25r{
+  top: 25rem;
+}
+.l0 {
+  left: 0;
+}
+
+.b-b {
+  border-bottom: 3px solid var(--white);
+  width: 424px;
+}
+.l-h3r {
+  line-height: 3rem;
+}
+.l-h4r {
+  line-height: 4rem;
+}
+.fw-100 {
+  font-weight: 100;
+}
+.t-a-c {
+  text-align: center;
+}
+.t-t-up{
+  text-transform: uppercase;
+}
+/*--------------------------------------------------  FONTS  --------------------------------------------------*/
+
+.ff-r {
+  font-family: "Roboto", sans-serif;
+}
+.ff-j {
+  font-family: "Jost", sans-serif;
+}
+
+.fs-1-6r {
+  font-size: 1.6rem;
+}
+.fs-4-5r{
+  font-size: 4.5rem;
+}
+.fs-3r{
+  font-size: 3rem;
+}
+.fw900{
+  font-weight: 900;
+}
+.fw-n{
+  font-weight: normal;
+}
+/*--------------------------------------------------  MARGIN  -------------------------------------------------*/
+.m-a {
+  margin: auto;
+}
+.m-2r{
+  margin: 2rem;
+}
+.m-4r{
+  margin: 4rem;
+}
+.m-5r {
+  margin: 5rem;
+}
+
+/*--------------------------------------------------  PADDING  ------------------------------------------------*/
+
+.p-05 {
+  padding: 0.5em;
+}
+.p-1 {
+  padding: 0 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-5 {
+  padding: 5rem;
+}
+.p-10r-0{
+  padding: 10rem 0;
+}
+.p-5-10 {
+  padding: 5rem 10rem;
+}
+.p-7-20{
+  padding: 7rem 20rem;
+}
+.p-5-0 {
+  padding: 5rem 0;
+}
+.p-b-2 {
+  padding-bottom: 2rem;
+}
+.p-b-3 {
+  padding-bottom: 3rem;
+}
+.p-b-5r{
+padding-bottom: 5rem;
+}
+.p-b-10r{
+  padding-bottom: 10rem;
+}
+.p-t-2{
+  padding-top: 2rem;
+}
+.p-t-3 {
+  padding-top: 3rem;
+}
+.p-t-5{
+  padding-top: 5rem;
+}
+.p-t-10{
+  padding-top: 10rem;
+}
+.p-t-7{
+  padding-top: 7rem;
+}
+.p-3-0 {
+  padding: 3rem 0;
+}
+.p-r-10r{
+  padding-right: 10rem;
+}
+.p-r-20r{
+  padding-right: 20rem;
+}
+.p-l-3r{
+  padding-left: 3rem;
+}
+.p-l-5r{
+  padding-left: 5rem;
+}
+.p-l-10r{
+  padding-left: 10rem;
+}
+
+
+/*--------------------------------------------------  color  --------------------------------------------------*/
+.bg-prima {
+  background-color: var(--primary);
+}
+.bg-w{
+  background-color: var(--white);
+}
+.col-w {
+  color: var(--white);
+}
+.col-b{
+  color: var(--black);
+}
+/*--------------------------------------------------  POSITION  -----------------------------------------------*/
+.p-rel {
+  position: relative;
+}
+.p-ab {
+  position: absolute;
+}
+.p-fix {
+  position: fixed;
+}
+/*--------------------------------------------------  WIDth & HEIGHT ------------------------------------------*/
+.m-w {
+  max-width: 1238px;
+}
+.m-w-900{
+  max-width: 90rem;
+}
+.m-w-1000{
+  max-width: 100rem;
+}
+.m-w-1200{
+  max-width: 120rem;
+}
+.w-a {
+  width: auto;
+}
+.w50 {
+  width: 50%;
+}
+.w100 {
+  width: 100%;
+}
+.h100 {
+  height: 100%;
+}
+.h100vh {
+  height: 100vh;
+  
+}
+.w40r {
+  width: 40rem;
+}
+.w529 {
+  width: 52.9rem;
+}
+.w525 {
+  width: 52.5rem;
+}
+.w60r{
+  width: 60rem;
+}
+.w82r{
+  width: 82rem;
+}
+.w70r{
+  width: 70rem;
+}
+/*--------------------------------------------------  DISPLAY -------------------------------------------------*/
+.dflex {
+  display: flex;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-se{
+  justify-content: space-evenly;
+}
+
+.jc-c {
+  justify-content: center;
+}
+.alit-c {
+  align-items: center;
+}
+.fd-c {
+  flex-direction: column;
+}
+/*--------------------------------------------------  HERO BUTTON  --------------------------------------------*/
+
+.hero_button {
+  padding: 20px;
+  margin: 50px;
+  color: var(--white);
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid var(--white);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.hero_button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+/*--------------------------------------------------  BUTTON  -------------------------------------------------*/
+
+.button {
+  padding: 20px;
+  margin: 5rem;
+  color: var(--primary);
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid var(--primary);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  HEADER  -------------------------------------------------*/
+/*#############################################################################################################*/
+header{
+  z-index: 1000;
+}
+/*--------------------------------------------------  MENU  ---------------------------------------------------*/
+
+.menu li {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+.menu a:hover,
+.menu a.active {
+  color: var(--complementary);
+}
+/*#############################################################################################################*/
+/*--------------------------------------------------  FOOTER  -------------------------------------------------*/
+/*#############################################################################################################*/
+.footer_left,
+.footer_right {
+  width: 424px;
+  height: 297px;
+  line-height: 3rem;
+}
+.footer_left h3,
+.footer_right h3 {
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.section_footer hr {
+  border: none;
+  height: 2px;
+  background-color: var(--white);
+  margin: 20px 0;
+}
+
+.mention {
+  text-align: center;
+  padding: 3rem;
+}
+.fa-brands {
+  font-size: 20px;
+  width: 3rem;
+  padding: 1rem 0;
+}
+
+
+/*#############################################################################################################*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------  HOME PAGE  ----------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*#############################################################################################################*/
+
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  MAIN  ---------------------------------------------------*/
+/*#############################################################################################################*/
+
+
+
+/*--------------------------------------------------  HERO SECTION  -------------------------------------------*/
+
+.hero_section {
+  background-image: url("/assets/img/presentation_global.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------  SERVICES SECTION  ---------------------------------------*/
+.articles_services {
+  padding-bottom: 5rem;
+}
+
+.articles_services article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles_services article div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles_services article img {
+  width: 80px;
+  padding: 2rem 0;
+}
+.container_services {
+  color: var(--black);
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article-img-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  padding: 2rem;
+  border: 3px solid var(--primary);
+  opacity: 0; /* Commencer invisible */
+  transform: translateY(20px); /* Légèrement déplacé vers le bas */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.article-img-block.visible {
+  opacity: 1; /* Devenir visible */
+  transform: translateY(0); /* Revenir à la position initiale */
+}
+
+.container .article-img-block:last-child {
+  margin-bottom: 5rem; /* Marge pour le dernier bloc */
+}
+
+.article-content {
+  padding: 0 2rem;
+}
+
+.article-title {
+  margin-bottom: 1rem;
+}
+
+.article-text {
+  line-height: 1.6; /* Espacement de ligne pour une meilleure lisibilité */
+}
+
+/* Style pour les images */
+.article-img {
+  width: auto;
+}
+/*--------------------------------------------------  RÉALISATION SECTION  ------------------------------------*/
+.slides-wrapper {
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 33.5%;
+  padding: 0 25px;
+}
+
+.img_carrousel {
+  width: 100%;
+  display: block;
+}
+
+.navigation {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  display: inline-block;
+  padding: 3.5rem 5rem;
+  margin: 0 10px;
+  font-size: 3rem;
+  color: var(--black);
+  background-color: transparent;
+  border: none;
+}
+
+/*--------------------------------------------------  ACTUALITÉ SECTION  --------------------------------------*/
+.art_actu {
+  width: 530px;
+  height: 486px;
+}
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-container .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 2.5rem;
+  color: var(--primary);
+  padding: 10px 20px;
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.image-container:hover .hover-text {
+  display: block;
+}
+
+.image-container:hover img {
+  opacity: 0.3;
+}
+article a {
+  text-decoration: none;
+}
+.art_actu figcaption p {
+  color: var(--white);
+  text-align: center;
+  padding: 5rem;
+}
+.art_actu a figure div img:hover {
+  background-color: var(--white);
+}
+
+/*#############################################################################################################*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------  ABOUT PAGE  ---------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+/*#############################################################################################################*/
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  MAIN  ---------------------------------------------------*/
+/*#############################################################################################################*/
+.section_blanche  p{
+  padding-bottom: 3rem;
+  line-height: 3rem;
+}
+.section_blanche h2{
+  padding-bottom: 3rem;
+}
+
+
+
+
+
+/*#############################################################################################################*/
+/*--------------------------------------------------  MÉDIA QUERYS  -------------------------------------------*/
+/*#############################################################################################################*/
